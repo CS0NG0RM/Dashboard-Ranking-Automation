@@ -1,1 +1,1 @@
-# Ranking-Automation-Wizard
+# Dashboard-Ranking-Automation
