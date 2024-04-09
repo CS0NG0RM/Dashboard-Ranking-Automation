@@ -4,6 +4,8 @@
 
 This project consists of several VBA modules that automate the process of updating the ranking of occupations in an Excel workbook. Each module retrieves the occupation and ranking from specific sheets, finds the corresponding row in the data sheet where the occupation matches, and inserts the ranking into the appropriate row and column.
 
+The end goal is to ensure that a rating can be inputted in each sheet that has a Dashboard. The data should then filter back into the original dataset where the rankings can be stored and retrieved at any point if needed.
+
 ## Highlights
 ### Efficient Data Manipulation
 The modules demonstrate efficient data manipulation by retrieving and updating data across multiple sheets. They showcase the use of Excel's `WorksheetFunction.Match` to find the corresponding row for an occupation in the data sheet.
