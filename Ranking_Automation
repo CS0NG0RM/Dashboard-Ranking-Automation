@@ -1,0 +1,149 @@
+# Module 1
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA8").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CR").Value = ranking
+  
+End Sub
+
+# Module 2
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA9").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CS").Value = ranking
+  End Sub
+
+# Module 3
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA10").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CT").Value = ranking
+End Sub
+
+# Module 4
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA11").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CU").Value = ranking
+End Sub
+
+# Module 5
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA12").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CV").Value = ranking
+End Sub
+
+# Module 6
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA13").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CW").Value = ranking
+End Sub
+
+# Module 7
+Sub UpdateRanking() Dim wsDashboard As Worksheet Dim wsOccupation As Worksheet Dim wsData As Worksheet Dim occupation As String Dim ranking As String
+
+' Set references to the worksheets
+Set wsDashboard = ThisWorkbook.Sheets("Dashboard")
+Set wsOccupation = ThisWorkbook.Sheets("Occupation")
+Set wsData = ThisWorkbook.Sheets("Data")
+
+' Get the occupation and ranking from the Dashboard sheet
+occupation = wsOccupation.Range("I2").Value
+ranking = wsDashboard.Range("AA14").Value
+
+' Find the corresponding row in the Data sheet where the occupation matches
+Dim dataRow As Long
+dataRow = Application.WorksheetFunction.Match(occupation, wsData.Range("G:G"), 0)
+
+' Insert the ranking into the appropriate row in column CR
+wsData.Cells(dataRow, "CX").Value = ranking
+End Sub
+
+#Running All Code Public Sub SaveRanking()
+
+' Call the UpdateRanking macros
+Call Module1.UpdateRanking ' Macro1
+Call Module2.UpdateRanking ' Macro2
+Call Module3.UpdateRanking ' Macro3
+Call Module4.UpdateRanking ' Macro4
+Call Module5.UpdateRanking ' Macro5
+Call Module6.UpdateRanking ' Macro6
+Call Module7.UpdateRanking ' Macro7
+End Sub
