@@ -24,5 +24,3 @@ The design of the project is modular, with each module performing a specific tas
 ## Running the Code
 The `SaveRanking` subroutine calls the `UpdateRanking` subroutine in each module sequentially, demonstrating how to orchestrate multiple tasks.
 
-## Note
-These modules assume that the occupation is located in cell "I2" of the "Occupation" sheet and the rankings are in cells "AA8" to "AA14" of the "Dashboard" sheet. The occupation data is assumed to be in column "G" of the "Data" sheet.
